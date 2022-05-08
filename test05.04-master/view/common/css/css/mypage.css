@@ -1,0 +1,28 @@
+.content-mypage {max-width:1300px;min-height: 500px;margin:0 auto;box-shadow: 0 0 3px 0 #d7dbec;padding: 60px 70px 50px 70px;background: #fff;border-radius: 25px;}
+section.mypage {padding-top: 30px;}
+
+/* 결제정보 페이지 내 pay status */
+.pay-status{display:flex;justify-content:space-between;height:300px;margin:40px 0;}
+.pay-status-grid{flex:0 1 auto;margin:0 15px;border:1px solid rgba(0, 0, 0, 0.05);background:rgba(245, 245, 245, 0.05);padding:20px;text-align:center;width:340px;border-radius: 5px;}
+.pay-status-grid .grid-title strong:before{content:'';background:url(/common/img/ico/ico-radio-large-checked.png) center center no-repeat;width:34px;height:34px;display:block;margin:15px auto;}
+.pay-status-grid .grid-contents {line-height:1.5;margin:25px 0;font-weight:700}
+.pay-status-grid:first-child .grid-title strong:before{background:url(/common/img/ico/ico-star-small.png)}
+.px22, .px22 *{font-size:22px;}
+.px20, .px20 *{font-size:20px;}
+
+/* 내정보 페이지 내 pay status */
+.introduce-ai-list {margin-top:30px;}
+.introduce-ai-list ul {}
+.introduce-ai-list ul li {margin-top:50px;display:flex;flex-direction:row;align-items:center;}
+.introduce-ai-list ul li:first-child {margin-top:0;}
+.introduce-ai-list .list-wrap {display:flex;flex-direction:row;align-items:center;}
+.introduce-ai-list dl dt {font-size:16px;color:#2884f1;font-weight:600;margin-bottom:15px;line-height: 25px;}
+.introduce-ai-list dl dt:last-child {margin-bottom:0px;}
+.introduce-ai-list dl dd {position:relative;font-size:16px;line-height:26px;color:#333;font-weight:600;}
+
+.content-mypage-panel-group {}
+.content-mypage-panel {border: 1px solid #d7dbec;border-radius: 5px; padding: 20px;}
+.content-mypage-panel + .content-mypage-panel {margin-top: 20px;}
+.content-mypage-panel dt {font-size:16px;color:#5A607F;font-weight:600;line-height: 25px;margin-bottom: 10px;}
+.content-mypage-panel dd {position:relative;font-size:16px;line-height:26px;color:#2884f1;font-weight:600;}
+.text-underline {border-bottom: 3px solid #2884f1;color: #5A607F!important;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;font-weight: bold;text-decoration: none;}

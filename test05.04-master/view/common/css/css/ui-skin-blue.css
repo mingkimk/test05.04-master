@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+.data-total.data-date {color:#27a0b1;}
+
+.round-label, .round-btn {color:#27a0b1;border:1px solid #27a0b1;}
+
+.ui-datepicker-trigger:before {background:url(../img/ico/ico-datepicker-blue.png) 0 0 no-repeat;}
+.ui-datepicker-calendar .ui-state-default.ui-state-hover,
+.ui-datepicker .ui-datepicker-buttonpane [data-handler="hide"] {border:1px solid #27a0b1;background:#27a0b1;}
+
+.btn-list ul li.active button {border:1px solid #2491a0;background:#27a0b1;}
+.btn-list ul li:not(.active) button:hover,
+.btn-list ul li:not(.active) button:focus {border:1px solid #2491a0;background:#fff;color:#2491a0;}
+
+.select.large > .trigger {border:2px solid #27a0b1;}
+.select.large > .trigger:before {background:url(../img/ico/ico-select-large-blue.png) 0 0 no-repeat;}
+.select.large.active > .trigger:before {background:url(../img/ico/ico-select-active-large-blue.png) 0 0 no-repeat;}
+.select.large > .target {border:2px solid #27a0b1;}
+
+.search-form .search-text input {border:2px solid #27a0b1;}
+
+.sort-option-wrap > ul > li.active > a{border-color:#27a0b1;}
+.sort-option-wrap .active a span{color:#27a0b1;}
+.sort-option-wrap .active .sort-card span::before {background:url(../img/btn/btn-sort-card-active-blue.svg) 0 0 no-repeat;}
+.sort-option-wrap .active .sort-list span::before {background:url(../img/btn/btn-sort-list-active-blue.svg) 0 0 no-repeat;}
+
+.inp input[type="checkbox"]:checked ~ i,
+.inp-card input[type="checkbox"]:checked ~ i {background:url(../img/ico/ico-checked-blue.png) center center no-repeat;}
+.inp input[type="radio"]:checked ~ i {background:url(../img/ico/ico-radio-checked-blue.png) center center no-repeat;}
+
+.inp-card input[type="checkbox"] ~ i:after {border:4px solid #27a0b1;}
+
+.card-list .only-link:hover:after,
+.card-list .only-link:focus:after {display:block;content:'';position:absolute;left:-1px;top:-1px;right:-1px;bottom:-1px;z-index:1;border:4px solid #27a0b1;box-shadow: 4px 4px 5px 0px rgba(0, 19, 45, 0.1);}
+.card-list .only-link:hover .card-num,
+.card-list .only-link:focus .card-num {background:url(../img/bg/bg-card-num-active-blue.png) 0 0 no-repeat;color:#fff;}
+
+.paging a.active {color:#27a0b1;border:1px solid #27a0b1;}
+
+.col-table thead th {background:#ecf8fa;border-bottom:3px solid #27a0b1;}
+
+.bg-category.bg-announcement {background:url(../img/bg-category/bg-announcement-blue.png) center center no-repeat;background-size:cover;}
+.bg-category.bg-bid {background:url(../img/bg-category/bg-bid-blue.jpg) center center no-repeat;background-size:cover;}
+
+.relative-header .tit {color:#27a0b1;}
+.relative-header .tit:before {background:#27a0b1;}
+
+.btn-ico-link {border:1px solid #27a0b1;color:#27a0b1;}
+.btn-ico-link:after {background:url(../img/arrow/arrow-right-5x8-active-blue.png) 0 0 no-repeat;}
+
+.btn-blue {border:1px solid #2491a0;background:#27a0b1;}
+.btn-blue:hover {border:1px solid #2491a0;background:#1F808D;}
+.btn-bg-blue {background:#fff;color: #27a0b1;border: 1px solid #27a0b1;}
+.btn-favorite.active {background:url(../img/ico/ico-favorite-active-blue.png) center center no-repeat!important;;border:1px solid #2491a0!important;;}
+
+.row-table table {border-top:4px solid #27a0b1;}
+.row-table tbody th {background:#ecf8fa;}
+
+.announcement-flow ol li:before {background:url(../img/arrow/arrow-flow-list-blue.png) 0 0 no-repeat;}
+
+.fc-green {color:#27a0b1!important;}
+
+.item:hover { color: #27a0b1; cursor: pointer; background-color:#ebedee ;}
+
+.btn-help {background:url(../img/ico/ico-help-blue.png) 0 0 no-repeat;}
+.btn-more {background-color:#27a0b1!important;}
+
+
+.left-favorite-btn.active span:after{content:'등록해제';min-height:50px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#27a0b1;}
+.left-favorite-btn.active span:before{content:'';background:url(../img/ico/ico-favorite-active-blue.png) center center no-repeat;width:20px;height:20px;margin-right:5px;}
+.switch-div .switch.active{background-color:#27a0b1;}
+.switch-div-bottom .switch.active{color:#27a0b1;}
+.calendar-table th{background-color:#27a0b1;}
+.blue, .blue *{color:#27a0b1!important;}

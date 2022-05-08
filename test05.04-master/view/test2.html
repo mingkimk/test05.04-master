@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REFERENCE 리스트 관리</title>
+	<link href="./css/test.css" rel="stylesheet" type ="text/css" />
+	<link rel="stylesheet" type="text/css" href="common/css/default.css">
+    <link rel="stylesheet" type="text/css" href="common/css/font.css">
+    <link rel="stylesheet" type="text/css" href="common/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="common/css/style.css">
+    <link rel="stylesheet" type="text/css" href="common/css/test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <script type="text/javascript" src="common/js/jquery-3.4.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+	<?php include('layout/header.php'); ?>
+	<div class="content">
+        <div class="content-wrap">
+            <div class="data-header-wrap">
+                <div class="data-tit">
+                    사용자관리
+                </div>
+	
+    <div class="content"> 
+        <div class="content-wrap">
+            <div class="data-header -wrap">
+                <div class="data-tit">Reference 리스트 관리</div>
+<table class="col-table clickable">
+                <colgroup>
+                    <col width="5%">
+                    <col width="10%">
+                    <col width="10%">
+                    <col width="*">
+                    <col width="*">
+                    <col width="*">
+                    <col width="5%">
+                    <col width="*">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td>TestID</td>
+                        <td>실험일자</td>
+                        <td>실험자</td>
+                        <td>실험목적</td>
+                        <td>실험설명</td>
+                        <td>gCode 파일명</td>
+                        <td>사용채널 수</td>
+                        <td>특이사항(비고)</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        foreach($data as $item){
+                    ?>
+                    <tr onclick="view_list('<?= $item->{'test_id'}?>')">
+                        <td><?= $item->{'test_id'}?></td>
+                        <td><?= $item->{'test_date'}?></td>
+                        <td><?= $item->{'test_manager'}?></td>
+                        <td><?= $item->{'test_goal'}?></td>
+                        <td><?= $item->{'test_content'}?></td>
+                        <td><?= $item->{'g_code'}?></td>
+                        <td><?= $item->{'ch_count'}?></td>
+                        <td><?= $item->{'etc'}?></td>
+                    </tr>
+                    <?php
+                        }
+                    ?>
+                </tbody>
+            </table>
+            </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

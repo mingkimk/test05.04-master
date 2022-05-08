@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>REFERENCE 리스트 관리</title>
+	<link rel="stylesheet" type="text/css" href="common/css/test2.css">
+	<link rel="stylesheet" type="text/css" href="common/css/test.css">
+	<script type="text/javascript" src="common/js/jquery-3.4.1.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<!-- include libraries(jQuery, bootstrap) -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!-- include summernote css/js -->
+	<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+</head>
+
+<body>
+	<?php include('layout/header.php'); ?>
+	<!--wrap-->
+	<div id="wrap">
+		<div id="container">
+			<section class="mypage">
+				<div class="content-board-header">
+					<h1>Reference 상세보기</h1>
+				</div>
+				<div class="content-board">
+					<div class="board-detail">
+						<h2>한글 뷰어 관련 공지사항</h2>
+						<div class="board-etc">
+							<div class="fl">
+								<tr>
+									<th>분류</th>
+									<td>
+										<select name="assort">
+											<option value>분류선택</option>
+											<option value="1">Business</option>
+											<option value="2">R&D</option>
+										</select>
+									</td>
+								</tr>
+								<span>"작성자:AI연구소"</span>
+								<td><?= $item->{'add_User_Id'} ?></td>
+							</div>
+							<div class="fr">
+								<span>"등록일 : 2020-01-01 오후 4:32:32"</span>
+								<td><?= $item->{'add_Date'} ?></td>
+
+								
+							</div>
+							<div class="board-editor">
+								<div id="editor-wrap">
+									<tr>
+										<td>내용</td>
+										<td> <?= $item->{'content'} ?></td>
+										<p>설치된 한글 뷰어 서비스를 서버 사정(2020년 연동)으로 인하여</p>
+										<p>잠시 중단하게 되었습니다.</p>
+									</tr>
+								</div>
+								<br>
+								<p class="desc">관련 메뉴: 한글뷰어</p>
+								<p class="desc">관련 URL : </p>
+							</div>
+							<div class="board-paging">
+
+							</div>
+							<div class="btn-wrap mt20">
+								<div class="fr">
+									<a onclick="history.go(-1)" class="btn-large btn-white">목록</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+<script>
+	//html summernote 에디터
+	$(document).ready(function () {
+		$('#summernote').summernote();
+	});
+</script>
+
+</html>

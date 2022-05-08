@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/*font init*/
+@font-face {
+	font-family:'KoPubBatangLight';
+	font-style:normal;
+	font-weight:400;
+	font-size:12px;
+	src:local(※),url(../font/KoPubBatangLight.ttf) format('truetype');
+}
+@font-face {
+	font-family:'KoPubBatangMedium';
+	font-style:normal;
+	font-weight:600;
+	src:local(※),url(../font/KoPubBatangMedium.ttf) format('truetype');
+}
+@font-face {
+	font-family:'KoPubBatangBold';
+	font-style:normal;
+	font-weight:700;
+	src:local(※),url(../font/KoPubBatangBold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family:'Gungso';
+	font-style:normal;
+	font-weight:700;
+	src:local(※),url(../font/Gungso.ttf) format('truetype');
+}
+
+@page {margin:0;}
+
+@media print{
+	html,body {padding:0;margin:0;-webkit-print-color-adjust: exact;}
+
+}
+
+html,body {width:210mm;height:297mm;padding:0;margin:0}
+table:not(:first-child){margin-left:30mm;width:150mm;padding-top:4mm;}
+table:nth-child(2){padding-top:8mm;border:none;}
+table:nth-child(2) tr {margin-bottom:8mm;}
+table:nth-child(2) th {text-align:center;font-size:28px;font-family:'KoPubBatangBold';vertical-align: bottom;}
+.style1 {border:none;}
+.style1 th {font-family:'KoPubBatangLight';}
+.style1 td {font-family:'KoPubBatangLight';padding-left:3}
+table:first-child {float:right;border-collapse: collapse;margin-top:20mm;margin-right:30mm}
+table:first-child *{margin:0;padding:0}
+table:first-child th {width:15mm;height:5mm;border:1px solid black;font-family: 'KoPubBatangBold';font-size:12}
+table:first-child td {height:15mm;border:1px solid black;vertical-align: middle;}
+td span {font-size:10;vertical-align: middle;}
+
+p {margin-left:32mm;font-family:'KoPubBatangLight';margin-top:4mm;margin-bottom:0}
+.desc {font-size:10px;}
+.memo, #chartContainer {width:150mm;height:40mm;margin-left:30mm;margin-top:0;border:1px solid black;}
+textarea {resize: none;}
+#chart {width:150mm;height:40mm}
+.memo {font-family: 'KoPubBatangLight';font-size:12px;}
+button {margin-left:373.5;margin-top:10px;background-color:#27a0b1;border:none;color:white;border-radius:8px;padding:10px}
+button:hover {cursor: pointer;background-color:#1F808D;}
+tr th hr {width:255;display:inline-block;text-align:left;margin:10 0 6 0}
+tr th span {padding: 0 5 0 5}
+
+.style2 {border:1px solid black; border-collapse: collapse;font-family: 'KoPubBatangLight';margin-top:4mm}
+.style2 th {border:1px solid black;text-align: center;background-color: #cccccc;}
+.style2 td {border:1px solid black; text-align: left;height:30;vertical-align: middle;}
+.style2 #chart,
+.style2 #chartContainer {width:405px;height:40mm;margin:0;border:none;}
+.style2 textarea {width:405px;height:40mm;margin:0;padding:0;border:none;font-family: 'KoPubBatangLight';font-size:12px;}
+.style2 p{margin:0;}

@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+body {
+   font-family: 'Noto Sans KR', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.ai-slide {
+    width: 100%;
+    margin-top: 94px;
+    display: inline-block;
+    height: 369px;
+}
+
+.ai-slide-box {
+	width: 100%;
+    height: 369px;
+    margin-top: 95px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #dedede;
+	background-image: url(https://www.aiipchal.com/new_aiipchal/common/img/board/page-ai/ai-ipchal-21.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.slide-content {
+	position: relative;
+	display: block;
+	margin: 0;
+	font-size: 24px;
+	line-height: 1;
+	transform: translateY(6rem);
+	animation: up 500ms linear forwards;
+	z-index: 1;
+	color: #fff;
+	text-align: center;
+	
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		width: 0px;
+		height: 1px;
+		left: 0;
+		background-color: rgba(0,0,0,0.2);
+		z-index: -1;
+	}
+	
+	&::before {
+		top: 1.4rem;
+		animation: draw 500ms linear 1s forwards;
+	}
+	
+	&::after {
+		bottom: 0.4rem;
+		animation: draw 500ms linear 1s forwards;
+	}
+	
+}
+
+.title-container {
+	font-size: 0;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 0.4rem;
+}
+
+@keyframes up {
+	
+	100% {
+		transform: translateY(0);
+	}
+	
+}
+
+@keyframes draw {
+	
+	100% {
+		width: 100%;
+	}
+	
+}
+
+.ref-box{
+	padding: 80px 0;
+	background-color: rgba(221, 239, 255, 0.2);
+}
+
+.ref-title, .mv-title {
+    text-align: center;
+    color: rgb(29, 63, 106);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 15px auto;
+    padding-bottom: 75px;
+}
+
+.ref-detail-box {
+    width: 100%;
+    max-width: 1315px;
+    margin: 0 auto;
+}
+
+.ref-detail-wrap {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.ref-detail {
+    width: 100%;
+    max-width: 33.33333%;
+    float: left;
+}
+
+.ref-img img {
+    width: 100%;
+    max-height: 221px;
+}
+
+
+.ref-img {
+  padding: 0 15px;
+  margin: 15px 0;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+    transform: scale(0.67);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+    transform: scale(0.67);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+    transform: scale(0.67);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+    transform: scale(0.67);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+    transform: scale(0.67);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+.ref-bar {
+    font-size: 18px;
+    color: rgb(149, 149, 149);
+}
+
+.ref-tc-b {
+    color: rgb(40, 132, 241);
+    font-size: 18px;
+}
+
+.ref-tc-y {
+    color: rgb(255, 106, 8);
+    font-size: 18px;
+}
+
+.ref-date-text {
+    color: rgb(149, 149, 149);
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+.ref-date {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.ref-title-text {
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 1.2;
+    min-height: 53px;
+}
+
+.ref-title-text strong {
+    letter-spacing: -2px;
+}
+
+/*.ref-institute {
+    color: rgb(149, 149, 149);
+    font-size: 18px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}*/
+
+ul.ref-text {
+    font-size: 18px;
+    padding: 0 50px;
+    color:#363636;
+}
+
+.ref-text li {
+    list-style: disc;
+    margin-bottom: 16px;
+}
+
+.mv-content {
+    margin-top: 90px;
+    margin-bottom: 115px;
+}
+
+.mv-detail {
+    width: 100%;
+    max-width: 1315px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    padding: 0 120px;
+}
+
+.mv-detail-box {
+    display: inline-block;
+}
+
+.mv-img {
+    width: 100%;
+    max-width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.mv-text-box {
+    width: 100%;
+    max-width: 50%;
+    float: left;
+}
+
+.mv-img-wrap {
+    padding: 0 15px;
+}
+
+.mv-img-box {
+    height: 200px;
+    overflow: hidden;
+}
+
+.mv-img-box img {
+    visibility: visible;
+    image-rendering: -webkit-optimize-contrast;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -72.6667px;
+    margin-left: 0px;
+}
+
+.mv-line {
+    padding: 0 15px;
+    width: 100%;
+    max-width: 110px;
+    margin-top: 60px;
+    float: left;
+}
+
+.mv-line hr {
+    border-top-width: 3px;
+    border-color: #1d3f6a;
+}
+
+.mv-text {
+    padding: 0 15px;
+    float: left;
+}
+
+.mv-line-text {
+    text-align: right;
+}
+
+.mv-top {
+    color: rgb(40, 132, 241);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mv-top-title {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.mv-sub {
+    font-size: 18px;
+    letter-spacing: -2px;
+    line-height: 1.7;
+}
+
+.big-wall {
+    background-color: #f9f9f9;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.bw-title{
+	text-align: center;
+    color: rgb(29, 63, 106);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 15px 0;
+    margin-bottom:75px;
+}
+
+.bw-detail-box {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bw-wrap {
+	width: 100%;
+    display: inline-block;
+}
+
+.bw-img-ov {
+    width: 100%;
+    max-width: calc(25% - 30px);
+    margin: 0 15px;
+    height: 500px;
+    position: relative;
+    float: left;
+}
+
+.bw-ov {
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.ov-one{
+    background-image: url(http://www.aiipchal.com/new_aiipchal/common/img/board/page-ai/ai-ipchal-16.jpg);
+}
+
+.ov-two{
+    background-image: url(http://www.aiipchal.com/new_aiipchal/common/img/board/page-ai/ai-ipchal-18.jpg);
+}
+
+.ov-th{
+    background-image: url(http://www.aiipchal.com/new_aiipchal/common/img/board/page-ai/ai-ipchal-19.jpg);
+}
+
+.ov-for{
+    background-image: url(http://www.aiipchal.com/new_aiipchal/common/img/board/page-ai/ai-ipchal-20.jpg);
+}
+
+.bw-hv {
+    display: none;
+}
+
+.bw-img-ov:hover .bw-hv {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    background: rgb(0 0 0 / 30%);
+    position: absolute;
+}
+
+.press-drop {
+    padding-top: 90px;
+}
+
+.pd-title{
+	text-align: center;
+    color: rgb(29, 63, 106);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 15px 0;
+    margin-bottom:75px;
+}
+
+.pd-b-sub {
+    display: none;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    padding: 30px 10px 10px;
+    font-size: 16px;
+}
+
+.pd-b-sub strong {
+    line-height: normal;
+}
+
+.pd-b-sub-on .pd-b-sub {
+	display: block;
+}
+
+.pad-board-row:first-child {
+    border-top: 1px solid #363636;
+}
+
+.pad-board-row{
+	width: 100%;
+    max-width: 1285px;
+    margin: 0 auto;
+	border-bottom: 1px solid #363636;
+	padding: 20px 0;
+}
+
+.pd-b-title {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.bw-hv p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: table;
+}
+
+.bw-hv span{
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ov-d {
+    margin-top: 75px;
+}
+
+.pd-wr {
+    width: 100%;
+    max-width: 1285px;
+    margin: 0 auto;
+}
+
+.pd-wr-box {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.pd-wr-box a {
+    background-color: #363636;
+    border-color: #363636;
+    color: #ffffff;
+    border-width: 1px;
+    padding: 6px 22px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.pd-wr-box a:hover {
+    background-color: #fff;
+    border-color: #363636;
+    color: #363636;
+    border-width: 1px;
+}
+
+.end-img {
+    text-align: center;
+}
+
+.ai-end {
+    padding-top: 15px;
+    padding-bottom: 80px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REFERENCE 리스트 관리</title>
+	<link href="./css/test.css" rel="stylesheet" type ="text/css" />
+	<link rel="stylesheet" type="text/css" href="common/css/default.css">
+    <link rel="stylesheet" type="text/css" href="common/css/font.css">
+    <link rel="stylesheet" type="text/css" href="common/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="common/css/style.css">
+	<link rel="stylesheet" type="text/css" href="common/css/test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <script type="text/javascript" src="common/js/jquery-3.4.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+
+	<tr>
+	<td height="52" align="center">
+<table border="0" cellspacing="0" cellpadding="0" width="95%">
+ <tbody>
+    <tr>
+	<td align="center" class="topmenu_gr">
+
+		<a href="#" class="topmenu">PR 리스트 관리</a>
+		<a href="#" class="topmenu">REFERENCE 리스트 관리</a>
+
+	</td>
+ </tr>
+</tbody>
+</table>
+</td>
+</tr>
+<td align="center" valign="top">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tbody>
+			<tr>
+				<td class="contents">
+					<h3 class ="title_con">REFERENCE 리스트 관리</h3>
+					<form name="fmData" method="post" enctype="multipart/form-data" target="actarea">
+						<input type="hidden" name="mode" value="save">
+						<input type="hidden" name="id_no" value="21">
+						<table border="0" cellspacing="0" cellpadding="0" align="center">
+							<tbody>
+								<tr>
+									<th width="30%">분류</th>
+									<td>
+										<select name="assort">
+											<option value>분류선택</option>
+											<option value>Business</option>
+											<option value>R&D</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th width="30%">제목</th>
+									<td>
+									<textarea name="subject" id="subject" cols="0" style="width: 100%;" rows="2" class="box"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<th width=30%>내용</th>
+									<td> 
+								
+										<!--html Editor Begin-->
+									</td>
+									<textarea name="content" id="snote" style="display: none;"><p>아아아아아아이우우우우에에엥옹오오오</p></textarea>
+								</tr>
+							</tbody>
+						</table>
+					</form> 
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</td>
+</body>
+</html>

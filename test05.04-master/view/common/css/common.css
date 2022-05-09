@@ -23,7 +23,7 @@ a:active { text-decoration:none; color: #222222; }
 #menu_bar a:visited { color: white; }
 #menu_bar a:active { color: white; }
 /* 메인 이미지 */
-#main_img_bar { height: 230px; text-align: center; background-color: #2092aa; }
+#main_img_bar { height: 230px; text-align: center; background-color: white; }
 #main_img_bar img { margin-top: 30px; }
 /* 하단 푸터 */
 footer { height: 100px; background-color: #2c2a29; }
